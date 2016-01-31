@@ -36,6 +36,7 @@
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
+            android:textSize="32sp"
             android:layout_height="wrap_content" />
     </FrameLayout>
 
