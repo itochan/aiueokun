@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">あいうえおくん</string>
-    <string name="make_sentence">文をつくる</string>
+    <string name="app_name">"アルファベットの略語から (略) 作るくん Ver 1.0</string>
+    <string name="make_sentence">略語を調べる</string>
     <string name="acronym_hint">頭字語を入力</string>
 </resources>
