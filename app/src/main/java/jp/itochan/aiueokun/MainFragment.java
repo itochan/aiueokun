@@ -115,7 +115,7 @@ public class MainFragment extends Fragment {
 
         private String getRandomHiragana(char alphabet) {
             HashMap<Character, String[]> table = new LinkedHashMap<>();
-            table.put('A', new String[]{"あ", "い", "う", "え", "お"});
+            table.put('A', new String[]{"あ"});
             table.put('B', new String[]{"ば", "び", "ぶ", "べ", "ぼ", "びゃ", "びゅ", "びょ"});
             table.put('C', new String[]{"ちゃ", "ち", "ちゅ", "ちぇ", "ちょ"});
             table.put('D', new String[]{"だ", "でぃ", "でゅ"});
@@ -137,9 +137,9 @@ public class MainFragment extends Fragment {
             table.put('T', new String[]{"た", "ち", "つ", "て", "と", "ちゃ", "ちゅ", "ちょ"});
             table.put('U', new String[]{"う"});
             table.put('V', new String[]{"ヴぁ", "ヴぃ", "ヴゅ", "ヴぇ", "ヴょ"});
-            table.put('W', new String[]{"わ"});
-            table.put('X', new String[]{"えっくす"});
             table.put('W', new String[]{"わ", "うぃ", "うぇ", "うぉ"});
+            table.put('X', new String[]{"えっくす"});
+            table.put('Y', new String[]{"や", "ゆ", "よ"});
             table.put('Z', new String[]{"ざ", "じ", "ず", "ぜ", "ぞ"});
 
             Random random = new Random();
