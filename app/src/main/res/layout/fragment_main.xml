@@ -11,14 +11,26 @@
     tools:showIn="@layout/activity_main">
 
     <Button
+        android:id="@+id/make_sentence"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/make_sentence" />
 
-    <ImageView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/aiueokun" />
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/aiueokun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/aiueokun" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
 
 </LinearLayout>
