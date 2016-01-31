@@ -10,6 +10,12 @@
     tools:context=".MainFragment"
     tools:showIn="@layout/activity_main">
 
+    <EditText
+        android:id="@+id/acronym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/acronym_hint" />
+
     <Button
         android:id="@+id/make_sentence"
         android:layout_width="match_parent"

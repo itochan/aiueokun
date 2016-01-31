@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -34,10 +35,11 @@ public class MainFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
         Button makeButton = (Button) view.findViewById(R.id.make_sentence);
+        final EditText acronym = (EditText) view.findViewById(R.id.acronym);
         makeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                makeSentence("STAP");
+                makeSentence(acronym.getText().toString());
             }
         });
         return view;
@@ -144,7 +146,12 @@ public class MainFragment extends Fragment {
 
             Random random = new Random();
             String[] hiragana = table.get(alphabet);
-            return hiragana[random.nextInt(hiragana.length)];
+
+            if (hiragana != null) {
+                return hiragana[random.nextInt(hiragana.length)];
+            } else {
+                return "";
+            }
         }
     }
 }

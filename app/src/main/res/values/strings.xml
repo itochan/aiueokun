@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">あいうえおくん</string>
     <string name="make_sentence">文をつくる</string>
+    <string name="acronym_hint">頭字語を入力</string>
 </resources>
