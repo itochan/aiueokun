@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">あいうえおくん</string>
+    <string name="make_sentence">文をつくる</string>
 </resources>
