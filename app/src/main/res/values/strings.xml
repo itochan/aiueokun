@@ -1,4 +1,5 @@
 <resources>
+    <string name="launcher">あいうえお</string>
     <string name="app_name">略語から作るくん</string>
     <string name="app_name_full">アルファベットの略語からあいうえお作文を作るくん\nVer 1.0（仮称）</string>
     <string name="make_sentence">略語を調べる</string>
