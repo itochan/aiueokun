@@ -1,49 +1,53 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainFragment"
-    tools:showIn="@layout/activity_main">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/acronym"
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/acronym_hint" />
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainFragment"
+        tools:showIn="@layout/activity_main">
 
-    <Button
-        android:id="@+id/make_sentence"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/make_sentence" />
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/aiueokun"
+        <EditText
+            android:id="@+id/acronym"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:src="@drawable/aiueokun" />
+            android:hint="@string/acronym_hint" />
+
+        <Button
+            android:id="@+id/make_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/make_sentence" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/aiueokun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/aiueokun" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32sp" />
+        </FrameLayout>
 
         <TextView
-            android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="32sp" />
-    </FrameLayout>
+            android:text="@string/app_name_full"
+            android:textSize="12sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name_full"
-        android:textSize="12sp" />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
