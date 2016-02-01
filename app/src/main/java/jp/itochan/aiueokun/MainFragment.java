@@ -1,13 +1,16 @@
 package jp.itochan.aiueokun;
 
+import android.app.Dialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.util.Xml;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -59,6 +62,23 @@ public class MainFragment extends Fragment {
         inflater.inflate(R.menu.main, menu);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_license:
+                showLicenseDialog();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void showLicenseDialog() {
+        LicenseDialogFragment dialog = new LicenseDialogFragment();
+        dialog.setTargetFragment(this, 0);
+        dialog.show(getChildFragmentManager(), LicenseDialogFragment.TAG);
+    }
+
     private void makeSentence(String acronym) {
         new MakeSentenceTask().execute(acronym);
     }
@@ -70,7 +90,6 @@ public class MainFragment extends Fragment {
         TextView resultText = (TextView) view.findViewById(R.id.result);
         resultText.setText(result);
     }
-
 
     private class MakeSentenceTask extends AsyncTask<String, Void, ArrayList<String>> {
         @Override
