@@ -3,6 +3,6 @@
     <string name="app_name">略語から作るくん</string>
     <string name="app_name_full">アルファベットの略語からあいうえお作文を作るくん\nVer 1.0（仮称）</string>
     <string name="make_sentence">略語を調べる</string>
-    <string name="acronym_hint">頭字語を入力</string>
+    <string name="acronym_hint">アルファベットを入力</string>
     <string name="open_source_license">オープンソースライセンス</string>
 </resources>
